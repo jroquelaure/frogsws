@@ -23,4 +23,16 @@ class FrogRepository {
         ]
     }
 
+    @Deprecated
+    void UglyCode(){
+        int i =0;
+        i =+ 1;
+    }
+
+    int UglyCode2(){
+        int i =0;
+        i =+ 1;
+        return i; 
+    }
+
 }

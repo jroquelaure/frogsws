@@ -25,7 +25,14 @@ class FrogController {
 
     @RequestMapping(path = '/version', produces = ['text/plain'])
     String version() {
+         def a = '' + 123
         version
+    }
+
+    public int UglyCode2(){
+        int i =0;
+        i =+ 1;
+        return i; 
     }
 
 }

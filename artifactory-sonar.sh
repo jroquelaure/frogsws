@@ -262,7 +262,7 @@ else
 	./jfrog rt bce $CI_BUILD_NAME $CI_BUILD_NUM
 
 	# Publish build info
-	./jfrog rt bp $CI_BUILD_NAME $CI_BUILD_NUM --server-id=jf1
+	./jfrog rt bp $CI_BUILD_NAME $CI_BUILD_NUM --url=$ARTIFACTORY_URL --apikey=$ARTIFACTORY_APIKEY
 
 fi
 

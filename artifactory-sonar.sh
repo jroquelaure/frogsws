@@ -179,7 +179,7 @@ setCiInfo()
 	elif [ ! -z $JENKINS_URL ]; then
 		citype="JENKINS"
 		CI_BUILD_NUM=${BUILD_NUMBER}
-		CI_BUILD_NAME=${JOB_NAME}-${GIT_BRANCH}
+		CI_BUILD_NAME=${JOB_NAME}
 	else
 		citype="UNKNOWN"
 		CI_BUILD_NUM=

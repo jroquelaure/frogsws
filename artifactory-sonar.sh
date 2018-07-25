@@ -255,6 +255,7 @@ else
 
         # Please modify to match the artifacts to be uploaded for your project
 		echo $ARTIFACTORY_REPO
+		echo $ARTIFACTORY_APIKEY
         ./jfrog rt u "*/*.jar" $ARTIFACTORY_REPO --build-name=$CI_BUILD_NAME --build-number=$CI_BUILD_NUM --flat=false --url=$ARTIFACTORY_URL --apikey=$ARTIFACTORY_APIKEY
 
 	# read env vars

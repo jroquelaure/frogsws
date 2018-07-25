@@ -251,10 +251,10 @@ else
 	./jfrog --version
 
 	# configure artifactory
-	./jfrog rt config jf1  --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=false
+	#./jfrog rt config jf1  --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=false
 
         # Please modify to match the artifacts to be uploaded for your project
-        ./jfrog rt u "*/*.jar" $ARTIFACTORY_REPO --build-name=$CI_BUILD_NAME --build-number=$CI_BUILD_NUM --flat=false --server-id=jf1 
+        ./jfrog rt u "*/*.jar" $ARTIFACTORY_REPO --build-name=$CI_BUILD_NAME --build-number=$CI_BUILD_NUM --flat=false --url=$ARTIFACTORY_URL --apiKey=$ARTIFACTORY_APIKEY
 
 	# read env vars
 	./jfrog rt bce $CI_BUILD_NAME $CI_BUILD_NUM

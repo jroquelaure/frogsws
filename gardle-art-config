@@ -1,0 +1,10 @@
+version: 1
+type: gradle
+useWrapper: true
+resolver:
+  repo: gradle-dev
+  serverID: artifactory_eu
+deployer:
+  repo: gradle-dev-local
+  serverID: artifactory_eu
+  deployMavenDescriptors: true

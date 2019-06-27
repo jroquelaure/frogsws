@@ -45,7 +45,7 @@ eclipse {
 	}
 }
 
-task wrapper(type: Wrapper) {
+task wrapper2(type: Wrapper) {
 	gradleVersion = '3.3'
 }
 

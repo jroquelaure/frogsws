@@ -1,6 +1,6 @@
 version: 1
 type: gradle
-useWrapper: true
+useWrapper: false
 resolver:
   repo: gradle-dev
   serverID: Default-Server

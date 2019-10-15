@@ -15,6 +15,7 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: 'io.spring.dependency-management'
 
 group = 'org.jfrog'
 version = addBuildNumberFromCI('0.1.0')
